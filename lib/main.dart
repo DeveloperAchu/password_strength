@@ -5,6 +5,9 @@ import 'utils/colors.dart';
 
 import 'screens/home_page.dart';
 
+/*
+  This is the entry point of the app.
+*/
 void main() {
   // Ensures all the necessary flutter bindings are made
   WidgetsFlutterBinding.ensureInitialized();
