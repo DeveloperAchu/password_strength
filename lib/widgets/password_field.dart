@@ -1,5 +1,35 @@
 import 'package:flutter/material.dart';
 
+/*
+  This widget shows the password text field.
+  
+  Attributes and values:
+    - decoration:   Default underline colors are set to be transparent. Also, 
+                    if the showIcon parameter is true, the value of the icon
+                    parameter is shown using AssetImage. Else, an empty container
+                    is shown. Using the suffixIconConstraints, the maximum width
+                    and height of the icon is set.
+    - obscureText:  Set to true inorder to hide the text entered by the user.
+    - autocorrect:  Set to false inorder to disable the autocorrect feature in
+                    this input field.
+    - obscuringCharacter: By default, the obscuring character is a bullet dot.
+                          This attribute is set to change the character to
+                          asterisk.
+    - controller:   The controller passed as the widget parameter is set. This
+                    gives the ability to monitor this controller from the home
+                    page.
+    - keyboardType: The keyboard type is set to visiblePassword. This brings the
+                    letters and the numbers in a single keyboard layout.
+    - textInputAction:  This controls the action button of the keyboard. This is
+                        set to done.
+    - onSubmitted:  The function declared here will be invoked when the user
+                    submits the field using the soft keyboard.
+    - cursorColor:  This attribute controls the color of the input field cursor.
+                    The value is set to the color value passed as the widget
+                    parameter.
+    - style:        The style of the text is defined using this attribute.
+*/
+
 class PasswordField extends StatelessWidget {
   final controller;
   final cursorColor;
@@ -18,23 +48,22 @@ class PasswordField extends StatelessWidget {
     return Container(
       child: TextField(
         decoration: InputDecoration(
-          // all the borders are set to be transparent color
           border: UnderlineInputBorder(
             borderSide: BorderSide(
               color: Colors.transparent,
-              width: 2.0,
+              width: 2.5,
             ),
           ),
           enabledBorder: UnderlineInputBorder(
             borderSide: BorderSide(
               color: Colors.transparent,
-              width: 2.0,
+              width: 2.5,
             ),
           ),
           focusedBorder: UnderlineInputBorder(
             borderSide: BorderSide(
               color: Colors.transparent,
-              width: 2.0,
+              width: 2.5,
             ),
           ),
           suffixIcon: showIcon
@@ -59,7 +88,6 @@ class PasswordField extends StatelessWidget {
         onSubmitted: (_) => {
           FocusScope.of(context).unfocus(),
         },
-        textAlignVertical: TextAlignVertical.top,
         cursorColor: cursorColor,
         style: TextStyle(
           color: Colors.black,

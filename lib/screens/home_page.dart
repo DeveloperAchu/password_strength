@@ -134,6 +134,7 @@ class _HomePageState extends State<HomePage> {
   void _clearFields() {
     FocusScope.of(context).unfocus();
     setState(() {
+      _passwordController.text = "";
       _passwordStrength = PasswordStrength.none;
       _passwordCursorColor = STRONG_TEXT_COLOR;
       _showPasswordIcon = false;

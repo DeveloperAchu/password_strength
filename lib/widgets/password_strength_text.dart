@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
 
+/*
+  This widget shows the strength of the entered password.
+  The text and the text color are passed as the widget parameters.
+*/
+
 class PasswordStrengthText extends StatelessWidget {
   final text;
   final textColor;

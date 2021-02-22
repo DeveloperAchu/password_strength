@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 
 import '../utils/colors.dart';
 
+/*
+  This widget shows the title of the input field.
+*/
+
 class TextWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
