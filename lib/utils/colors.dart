@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
+
+/*
+  This file declares all the custom colors used in this app
+*/
 
 const WHITE_COLOR = const Color(0xFFFFFFFF);
 const GREY_COLOR = const Color(0xFFAEAEAE);
