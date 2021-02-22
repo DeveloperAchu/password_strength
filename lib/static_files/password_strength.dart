@@ -1,3 +1,7 @@
+/*
+  This class declares the different possible values for the password strength
+  displaying widget.
+*/
 class PasswordStrength {
   static const none = "";
   static const weak = "Weak password";
